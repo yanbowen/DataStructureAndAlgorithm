@@ -1,4 +1,4 @@
-package cn.yanbowen.paixu;
+package cn.yanbowen.sort;
 
 /**
  * Created by <a href=mailto:boweny.yan@qunar.com>boweny.yan</a>

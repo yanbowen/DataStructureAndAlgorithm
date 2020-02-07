@@ -1,4 +1,4 @@
-package cn.yanbowen.lianbiao;
+package cn.yanbowen.linklist.queue.stack;
 
 import cn.yanbowen.common.ListNode;
 

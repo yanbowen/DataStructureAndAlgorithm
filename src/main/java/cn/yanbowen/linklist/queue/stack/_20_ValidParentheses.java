@@ -1,9 +1,6 @@
-package cn.yanbowen.lianbiao;
-
-import com.google.common.collect.Maps;
+package cn.yanbowen.linklist.queue.stack;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Stack;
 
 /**
