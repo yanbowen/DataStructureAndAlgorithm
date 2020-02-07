@@ -1,5 +1,7 @@
 package cn.yanbowen.linklist.queue.stack;
 
+import java.util.Stack;
+
 /**
  * Created by <a href=mailto:boweny.yan@qunar.com>boweny.yan</a>
  * DATE : 02/07/2020
@@ -34,40 +36,59 @@ package cn.yanbowen.linklist.queue.stack;
 public class _232_ImplementQueueUsingStacks {
 
     class MyQueue {
+        Stack<Integer> s1;
+        Stack<Integer> s2;
 
         /**
          * Initialize your data structure here.
          */
         public MyQueue() {
-
+            s1 = new Stack<Integer>();
+            s2 = new Stack<Integer>();
         }
 
         /**
          * Push element x to the back of queue.
          */
         public void push(int x) {
-
+            s1.push(x);
         }
 
         /**
          * Removes the element from in front of queue and returns that element.
          */
         public int pop() {
-
+            if (s2.isEmpty()) {
+                while (!s1.isEmpty()) {
+                    s2.push(s1.pop());
+                }
+            }
+            if (!s2.isEmpty()) {
+                return s2.pop();
+            }
+            throw new RuntimeException("队列无元素！");
         }
 
         /**
          * Get the front element.
          */
         public int peek() {
-
+            if (s2.isEmpty()) {
+                while (!s1.isEmpty()) {
+                    s2.push(s1.pop());
+                }
+            }
+            if (!s2.isEmpty()) {
+                return s2.peek();
+            }
+            throw new RuntimeException("队列无元素！");
         }
 
         /**
          * Returns whether the queue is empty.
          */
         public boolean empty() {
-
+            return s1.isEmpty() && s2.isEmpty();
         }
     }
 }
