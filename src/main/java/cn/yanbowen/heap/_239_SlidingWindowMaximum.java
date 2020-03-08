@@ -1,6 +1,7 @@
 package cn.yanbowen.heap;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * Created by <a href=mailto:boweny.yan@qunar.com>boweny.yan</a>
@@ -41,7 +42,7 @@ public class _239_SlidingWindowMaximum {
 
     class Solution {
         //双向队列
-        ArrayDeque<Integer> deq = new ArrayDeque<>();
+        Deque<Integer> deq = new ArrayDeque<>();
         int[] nums;
 
         public void clean_deque(int i, int k) {

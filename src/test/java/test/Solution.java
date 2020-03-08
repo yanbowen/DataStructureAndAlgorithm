@@ -38,4 +38,10 @@ public class Solution {
         }
         return stack.isEmpty();
     }
+
+    public static void main(String[] args) {
+        String s = "cvm";
+        s.concat("jj");
+        System.out.println(s);
+    }
 }
