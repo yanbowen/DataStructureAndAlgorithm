@@ -40,8 +40,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        String s = "cvm";
-        s.concat("jj");
-        System.out.println(s);
+        int[] ints = {1};
+        System.out.println(ints.length);
     }
 }
