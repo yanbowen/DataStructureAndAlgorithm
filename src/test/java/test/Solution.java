@@ -1,7 +1,8 @@
 package test;
 
-import java.util.HashMap;
-import java.util.Stack;
+import com.google.common.collect.Lists;
+
+import java.util.*;
 
 /**
  * Created by <a href=mailto:boweny.yan@qunar.com>boweny.yan</a>
@@ -40,7 +41,12 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] ints = {1};
-        System.out.println(ints.length);
+        List<Integer> list = Lists.newArrayList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(6);
+
+        System.out.println(list.toString());
     }
 }
