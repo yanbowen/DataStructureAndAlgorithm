@@ -61,6 +61,7 @@ public class _22_Generate_Parentheses {
         public void generateOneByOne(int left, int right, List<String> result, String sublist) {
             if (left == 0 && right == 0) {
                 result.add(sublist);
+                return;
             }
             if (left > 0) {
                 generateOneByOne(left - 1, right, result, sublist + "(");
